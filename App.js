@@ -1,11 +1,6 @@
 
 import React, { Component } from "react";
-import logo from './logo.svg';
 import './App.css';
-// import "bootstrap/dist/css/bootstrap.css";
-//import "bootswatch/journal/bootstrap.css"
-
-import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 
 const PLACES = [
   { name: "Krasnodar", zip: "542420" },
@@ -14,26 +9,6 @@ const PLACES = [
   { name: "Arkhipo-Osipovka", zip: "580969" }
 ];
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           General
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 class WeatherDisplay extends Component {
   constructor() {
@@ -42,8 +17,6 @@ class WeatherDisplay extends Component {
       weatherData: null
     };
   }
-
-
 
   componentDidMount() {
     const zip = this.props.zip;
